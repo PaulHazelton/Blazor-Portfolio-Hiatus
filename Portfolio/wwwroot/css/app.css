@@ -254,6 +254,59 @@ nav {
 
 /* #endregion Home Page */
 
+/* #region Footer */
+
+footer {
+	width: 100%;
+	text-align: center;
+	margin-top: 1rem;
+	padding: 1rem;
+}
+
+.connection-list {
+	padding-top: 1rem;
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+}
+
+.connection {
+	position: relative;
+	width: 4rem;
+	color: white;
+}
+
+.connection i {
+	font-size: 4rem;
+	color: white;
+}
+
+.connection-link:hover .connection-pic {
+	transform: rotateZ(360deg);
+	transition: transform var(--time-3) ease;
+}
+
+.connection-link:focus .connection-pic {
+	border: 2px solid var(--accent);
+	outline-style: none;
+	outline-width: 0px;
+	outline: none;
+	transition: 0;
+}
+
+.connection-label {
+	font-size: 1rem;
+	font-weight: normal;
+	text-align: center;
+
+	position: relative;
+	width: 120%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+/* #endregion */
+
 /* General Stuff */
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
@@ -336,13 +389,6 @@ ol {
 	margin-right: 1px;
 }
 
-/* Footer */
-#footer {
-	width: 100%;
-	text-align: center;
-	margin-top: 1rem;
-	padding: 1rem;
-}
 
 /* Center Pane. There's two for proper sizing, its a pain */
 #center-pane1 {
@@ -551,49 +597,6 @@ ol {
 
 #contact-box {
 	font-size: 1.5rem;
-}
-
-/* Connections like github and linkedin */
-#connection-list {
-	padding-top: 1rem;
-	display: flex;
-	justify-content: center;
-}
-
-.connection {
-	position: relative;
-	width: 4rem;
-}
-
-.connection-pic {
-	width: 100%;
-	object-fit: cover;
-	border-radius: 50%;
-	transition: transform var(--time-3) ease;
-}
-
-.connection-link:hover .connection-pic {
-	transform: rotateZ(360deg);
-	transition: transform var(--time-3) ease;
-}
-
-.connection-link:focus .connection-pic {
-	border: 2px solid var(--accent);
-	outline-style: none;
-	outline-width: 0px;
-	outline: none;
-	transition: 0;
-}
-
-.connection-label {
-	font-size: 1rem;
-	font-weight: normal;
-	text-align: center;
-
-	position: relative;
-	width: 120%;
-	left: 50%;
-	transform: translateX(-50%);
 }
 
 .yellow-info {
