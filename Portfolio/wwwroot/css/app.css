@@ -307,6 +307,39 @@ footer {
 
 /* #endregion */
 
+/* #region Construction */
+
+.center-pane {
+	width: 100%;
+	max-width: 120ch;
+
+	margin: 0 auto;
+	margin-top: 4rem;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.center-pane h1 {
+	font-size: 4rem;
+}
+
+.center-pane img {
+	margin-top: 2rem;
+	width: 40%;
+}
+
+/* #endregion */
+
+/* #region Weird Blazor h1 focus thing */
+
+h1:focus {
+	outline: none;
+}
+
+/* #endregion */
+
 /* General Stuff */
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
