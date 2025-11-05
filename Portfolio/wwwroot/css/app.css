@@ -340,7 +340,95 @@ h1:focus {
 
 /* #endregion */
 
-/* General Stuff */
+/* #region Project Box */
+
+.info-box {
+	padding: 1rem;
+	margin-bottom: 2rem;
+
+	border-radius: 1rem;
+	border-style: solid;
+	border-width: 1px;
+
+	border-color: var(--gray2);
+	color: var(--foregroundColor);
+	background-color: var(--gray1);
+}
+
+.large-box {
+	font-size: 3rem;
+	text-align: center;
+}
+
+#project-section .heading {
+	position: sticky;
+}
+
+#project-box {
+	display: flex;
+}
+
+.project-info {
+	width: 60%;
+}
+
+.project-img-box {
+	position: relative;
+	align-self: flex-start;
+	margin: auto;
+	margin-top: 1rem;
+	width: 40%;
+}
+
+.project-img-box img {
+	width: 100%;
+	height: 100%;
+}
+
+@media (max-width: 600px) {
+	#project-box {
+		flex-direction: column;
+	}
+
+	.project-info {
+		width: 100%;
+	}
+
+	.project-img-box {
+		width: 100%
+	}
+
+	#connection-list {
+		flex-direction: row;
+		flex-wrap: wrap;
+		position: relative;
+		top: -1rem;
+		justify-content: center;
+	}
+
+	.connection {
+		margin-left: 1rem;
+		margin-right: 1rem;
+		margin-top: 1rem;
+	}
+}
+
+@media (min-width: 600px) {
+	.project-info {
+		padding-right: 1rem;
+	}
+
+	.project-img-box {
+		width: 40%;
+	}
+
+	.connection:not(:last-child) {
+		margin-right: 2rem;
+	}
+}
+
+/* #endregion */
+
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
@@ -609,25 +697,6 @@ ol {
 	right: 0;
 }
 
-/* Content Stuff */
-.info-box {
-	padding: 1rem;
-	margin-bottom: 2rem;
-
-	border-radius: 1rem;
-	border-style: solid;
-	border-width: 1px;
-
-	border-color: var(--gray2);
-	color: var(--foregroundColor);
-	background-color: var(--gray1);
-}
-
-.large-box {
-	font-size: 3rem;
-	text-align: center;
-}
-
 #contact-box {
 	font-size: 1.5rem;
 }
@@ -640,4 +709,23 @@ ol {
 
 	padding: 1rem;
 	margin: 1rem;
+}
+
+/* SORT ME */
+.basic-container {
+	max-width: 100ch;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 4rem;
+}
+
+.basic-container img {
+	max-width: 100ch;
+	width: 100%;
+}
+
+.basic-container iframe {
+	max-width: 100ch;
+	width: 100%;
+	aspect-ratio: 16 / 9;
 }
