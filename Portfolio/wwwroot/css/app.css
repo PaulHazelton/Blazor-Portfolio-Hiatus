@@ -67,7 +67,8 @@ body {
 }
 
 main {
-	height: calc(100vh - (var(--header-fs) * 4));
+	margin-top: calc(var(--header-fs) * 4);
+
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
