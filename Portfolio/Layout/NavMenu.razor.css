@@ -10,7 +10,6 @@ header {
 	height: 4em;
 
 	background-color: var(--gray1);
-	transition: var(--time-2) ease-in-out;
 	z-index: 10;
 }
 
